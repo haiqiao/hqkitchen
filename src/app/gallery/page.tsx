@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import Image from "next/image";
 
 export const metadata = { title: "Gallery | HQ Kitchen" };
 
@@ -27,7 +28,13 @@ export default function GalleryPage() {
       <div className="grid">
         {photos.map((p, i) => (
           <div className="card" key={i}>
-            <img src={p.src} alt={p.alt} style={{ width: "100%", height: "auto", display: "block", borderRadius: 8 }} />
+            <Image 
+              src={p.src} 
+              alt={p.alt} 
+              width={400}
+              height={300}
+              style={{ width: "100%", height: "auto", display: "block", borderRadius: 8 }} 
+            />
             <p style={{ marginTop: 8 }}>{p.alt}</p>
           </div>
         ))}
