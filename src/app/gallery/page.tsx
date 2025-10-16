@@ -9,7 +9,7 @@ function getLocalPhotos() {
   try {
     const files = fs.readdirSync(galleryDir);
     const images = files.filter((f) => /\.(jpe?g|png|webp)$/i.test(f));
-    const basePath = process.env.BASE_PATH || '/hqkitchen';
+    const basePath = process.env.BASE_PATH || '';
     return images.map((file) => ({
       src: `${basePath}/images/gallery/${file}`,
       alt: file.replace(/[-_]/g, " ").replace(/\.[^.]+$/, ""),

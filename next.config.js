@@ -4,8 +4,8 @@ const basePath = process.env.BASE_PATH || '';
 
 const nextConfig = {
   output: 'export',
-  basePath: basePath || '/hqkitchen',
-  assetPrefix: basePath ? `${basePath}/` : '/hqkitchen/',
+  basePath: basePath || '',
+  assetPrefix: basePath ? `${basePath}/` : '',
   images: { unoptimized: true },
   trailingSlash: true,
 };
