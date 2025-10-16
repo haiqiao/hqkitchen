@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 
 export const metadata = {
   title: "HQ Kitchen",
-  description: "Home cooking, meal prep, and catering in your neighborhood.",
+  description: "Home cooking business based in San Diego, CA.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
