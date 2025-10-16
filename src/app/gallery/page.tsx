@@ -19,8 +19,7 @@ function getLocalPhotos() {
 }
 
 export default function GalleryPage() {
-  const local = getLocalPhotos();
-  const photos = local.length ? local : externalPhotos;
+  const photos = getLocalPhotos();
 
   return (
     <section>
