@@ -37,3 +37,4 @@ BASE_PATH=/hqkitchen npm run build
 - `next.config.js` uses `output: 'export'` and `images.unoptimized` for compat with GitHub Pages.
 - Navigation uses `basePath` so links work correctly under a subpath.
 
+
